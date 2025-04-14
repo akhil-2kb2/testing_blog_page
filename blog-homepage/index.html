@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogging Homepage</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Blogging</div>
+      <nav>
+        <ul id="navLinks">
+          <!-- Navigation links injected via JS -->
+        </ul>
+      </nav>
+      <button id="darkModeToggle">Dark Mode</button>
+    </div>
+    <div class="header-content">
+      <h1>Welcome to My Blog</h1>
+      <p>Explore the latest posts and insights</p>
+    </div>
+    <!-- SVG wave effect -->
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path fill="#f5f5f5" d="M0,32L48,26.7C96,21,192,11,288,16C384,21,480,43,576,53.3C672,64,768,64,864,58.7C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+  </header>
+
+  <!-- Blog Posts Section -->
+  <section class="posts container">
+    <h2>Recent Posts</h2>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search posts..." />
+    </div>
+    <div class="post-grid" id="postGrid">
+      <!-- Blog posts injected by JS; each post card can link to post.html?id=POST_ID -->
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <button id="loadMoreBtn">Load More Posts</button>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop">Back to Top</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

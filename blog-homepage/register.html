@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Blogging</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="register">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Blogging</div>
+      <nav>
+        <ul id="navLinks"></ul>
+      </nav>
+      <button id="darkModeToggle">Dark Mode</button>
+    </div>
+  </header>
+
+  <section class="auth container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="regUsername">Username:</label>
+        <input type="text" id="regUsername" required />
+      </div>
+      <div class="form-group">
+        <label for="regEmail">Email:</label>
+        <input type="email" id="regEmail" required />
+      </div>
+      <div class="form-group">
+        <label for="regPassword">Password:</label>
+        <input type="password" id="regPassword" required />
+      </div>
+      <div class="form-group">
+        <label for="regConfirmPassword">Confirm Password:</label>
+        <input type="password" id="regConfirmPassword" required />
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+/* Additional Styles for Post Detail & Comments */
+
+/* Post Detail Section */
+.post-detail img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Social Share */
+.social-share {
+  margin: 20px 0;
+}
+.social-share a {
+  color: #007a7d;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.social-share a:hover {
+  text-decoration: underline;
+}
+
+/* Like Button */
+.post-like {
+  margin-bottom: 30px;
+}
+
+/* Comments Section */
+.comments {
+  margin-top: 40px;
+}
+.comment {
+  background: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.comment p {
+  margin: 5px 0;
+}
+.comment-date {
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Comment Form */
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.comment-form button {
+  margin-top: 10px;
+  background: #007a7d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.comment-form button:hover {
+  background: #005f63;
+}
+
+/* (Include the rest of your previous CSS for global styles, dark mode, etc.) */
+
+
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header section styling */
+header {
+  background: #007a7d; /* dark teal */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #e0e0e0;
+}
+
+/* Dark mode toggle button */
+#darkModeToggle {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Header content */
+.header-content {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2em;
+}
+
+/* SVG wave effect */
+header svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+/* Posts section */
+.posts {
+  padding: 40px 0;
+}
+
+.posts h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Search Bar */
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Grid layout for blog post previews */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual post card */
+.post {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.post-category {
+  font-size: 0.9em;
+  color: #007a7d;
+  margin-bottom: 5px;
+}
+
+.post-title {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.post-description {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Authentication and Profile forms styling */
+.auth, .profile {
+  padding: 40px 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth h2, .profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth button, .profile button {
+  width: 100%;
+  padding: 10px;
+  background: #007a7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth button:hover, .profile button:hover {
+  background: #005f63;
+}
+
+/* Back-to-Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #007a7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  opacity: 0.8;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+body.dark-mode header {
+  background: #005f63;
+}
+body.dark-mode nav ul li a {
+  color: #ddd;
+}
+body.dark-mode nav ul li a:hover,
+body.dark-mode nav ul li a.active {
+  color: #bbb;
+}
+body.dark-mode .post {
+  background: #333;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .post-title, 
+body.dark-mode .post-category, 
+body.dark-mode .post-description {
+  color: #ddd;
+}

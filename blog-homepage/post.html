@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post - Blogging</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="post">
+  <!-- Header Section -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Blogging</div>
+      <nav>
+         <ul id="navLinks">
+           <!-- Navigation links injected via JS -->
+         </ul>
+      </nav>
+      <button id="darkModeToggle">Dark Mode</button>
+    </div>
+  </header>
+  
+  <!-- Post Content Section -->
+  <section class="post-detail container">
+     <h2 id="postTitle">Post Title</h2>
+     <img id="postImage" src="" alt="Post Image" />
+     <div id="postContent">
+         <p>Post content goes here...</p>
+     </div>
+     <!-- Social Share Buttons -->
+     <div class="social-share">
+         <p>Share this post:</p>
+         <a id="twitterShare" href="#" target="_blank">Twitter</a> |
+         <a id="facebookShare" href="#" target="_blank">Facebook</a> |
+         <a id="linkedInShare" href="#" target="_blank">LinkedIn</a>
+     </div>
+     <!-- Like Button -->
+     <div class="post-like">
+         <button id="likeButton">Like (<span id="likeCount">0</span>)</button>
+     </div>
+  </section>
+
+  <!-- Comments Section -->
+  <section class="comments container">
+    <h3>Comments</h3>
+    <div id="commentsList">
+        <!-- Comments will be rendered here -->
+    </div>
+    <div class="comment-form">
+       <h4>Add a Comment</h4>
+       <form id="commentForm">
+         <textarea id="commentText" rows="3" placeholder="Your comment..." required></textarea>
+         <button type="submit">Submit Comment</button>
+       </form>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
